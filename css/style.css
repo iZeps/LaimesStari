@@ -7,7 +7,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -51,7 +51,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 16px; }
 
 [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
@@ -168,7 +168,7 @@ td {
 
 html {
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 100%;
   line-height: 1.5; }
 
@@ -178,7 +178,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-size: 1.25em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -229,14 +229,6 @@ html {
  */
 body {
   margin: 0; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -589,12 +581,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-h1 {
-  color: blue; }
+.hero-laim {
+  background-image: url("../img/hero-laim.jpg");
+  background-size: cover;
+  background-position: auto center; }
+  .hero-laim .hero-container {
+    padding: 5em 0;
+    text-align: center; }
+  .hero-laim h1 {
+    font-size: 3.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.05em;
+    color: white; }
+    @media screen and (min-width: 53.75em) {
+      .hero-laim h1 {
+        font-size: 5.625em; } }
+  .hero-laim h2 {
+    font-size: .875em;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    color: #303f49; }
 
 .centered-navigation {
-  background-color: #E7F1EC;
-  border-bottom: 1px solid #d4e6dd;
+  background-color: #FFF;
   min-height: 60px;
   width: 100%;
   z-index: 9999; }

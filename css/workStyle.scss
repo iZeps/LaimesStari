@@ -1,3 +1,29 @@
-h1 {
-  color: blue;
+.hero-laim {
+  background-image: url("../img/hero-laim.jpg");
+  background-size: cover;
+  background-position: auto center;
+
+
+  .hero-container {
+    padding: 5em 0 ;
+    text-align: center;
+
+  }
+  h1 {
+    font-size: 3.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.05em;
+    color: white;
+    @include media ($large-screen) {
+      font-size: 5.625em;
+    }
+  }
+  h2 {
+    font-size: .875em;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    color: $textColor;
+  }
 }
