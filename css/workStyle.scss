@@ -1,7 +1,7 @@
 .hero-laim {
   background-image: url("../img/hero-laim.jpg");
   background-size: cover;
-  background-position: auto center;
+  background-position: center center;
 
 
   .hero-container {
@@ -26,4 +26,34 @@
     letter-spacing: 0.125em;
     color: $textColor;
   }
+}
+
+//Reservation button and hover/focus control
+.res-button {
+
+  color: $orangeColor;
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  margin: 1.25em 0;
+  margin-left: -6.75em;
+  background: white;
+  width: 13.5em;
+  height: 2.5em;
+  border-radius: 1.25em;
+  border: solid 0.18em $orangeColor;
+  font-size: 1em;
+  line-height: 1em;
+
+
+}
+
+button.res-button:focus {
+  outline: 0;
+}
+
+button.res-button:hover {
+  background: white;
+  color: $orangeColor;
+  cursor: default;
 }

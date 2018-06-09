@@ -584,7 +584,7 @@ textarea {
 .hero-laim {
   background-image: url("../img/hero-laim.jpg");
   background-size: cover;
-  background-position: auto center; }
+  background-position: center center; }
   .hero-laim .hero-container {
     padding: 5em 0;
     text-align: center; }
@@ -603,6 +603,29 @@ textarea {
     font-weight: bold;
     letter-spacing: 0.125em;
     color: #303f49; }
+
+.res-button {
+  color: #FF601A;
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  margin: 1.25em 0;
+  margin-left: -6.75em;
+  background: white;
+  width: 13.5em;
+  height: 2.5em;
+  border-radius: 1.25em;
+  border: solid 0.18em #FF601A;
+  font-size: 1em;
+  line-height: 1em; }
+
+button.res-button:focus {
+  outline: 0; }
+
+button.res-button:hover {
+  background: white;
+  color: #FF601A;
+  cursor: default; }
 
 .centered-navigation {
   background-color: #FFF;
