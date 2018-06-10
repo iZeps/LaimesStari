@@ -621,13 +621,16 @@ main {
   line-height: 1em;
   left: 50%; }
 
-button.res-button:focus {
+.res-button:focus {
   outline: 0; }
 
-button.res-button:hover {
+.res-button:hover {
   background: white;
   color: #FF601A;
   cursor: default; }
+
+a {
+  text-decoration: none; }
 
 .first-grid {
   padding: 5% 8%;
@@ -666,25 +669,51 @@ button.res-button:hover {
     .nr3 {
       grid-column: 1/3; } }
 
-div.house-logo {
+span.house-logo {
   margin: 0 auto 0.8em auto;
   padding: 0;
   width: 3.3em;
   height: 3.3em;
   background: white;
-  align-self: flex-end; }
+  align-self: flex-end;
+  border-radius: 1.65em; }
 
-button.single-home-button {
+span.single-home-button {
   margin: 0 auto;
   padding: 0;
   width: 10em;
   height: 1.3em;
   text-transform: uppercase;
-  line-height: 1em;
+  text-align: center;
+  line-height: 1.4em;
+  font-family: "Roboto";
+  font-weight: bold;
   background-color: white;
   color: #303f49;
   border-radius: 0;
   align-self: flex-start; }
+
+.headlines {
+  text-align: center;
+  font-size: 1.5em;
+  color: #303f49;
+  padding: 4% 0 2% 0; }
+
+.galery-grid {
+  padding: 0 8% 5% 8%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5em;
+  justify-items: center; }
+  @media screen and (min-width: 26.5625em) {
+    .galery-grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (min-width: 53.75em) {
+    .galery-grid {
+      grid-template-columns: 1fr 1fr 1fr; } }
+
+.thumb-image {
+  width: 20.1875em; }
 
 .centered-navigation {
   background-color: #FFF;

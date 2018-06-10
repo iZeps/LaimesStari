@@ -52,22 +52,28 @@ main {
 
 }
 
-button.res-button:focus {
+.res-button:focus {
   outline: 0;
 }
 
-button.res-button:hover {
+.res-button:hover {
   background: white;
   color: $orangeColor;
   cursor: default;
 }
 
 //First grid
+
+a {
+  text-decoration: none;
+}
+
 .first-grid {
   padding: 5% 8%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
+
   @include media ($mobile-screen) {
     grid-template-columns: 1fr 1fr;
   }
@@ -104,26 +110,54 @@ button.res-button:hover {
   }
 }
 
-div.house-logo {
+span.house-logo {
   margin: 0 auto 0.8em auto;
   padding: 0;
   width: 3.3em;
   height: 3.3em;
   background: white;
   align-self: flex-end;
-
+  border-radius: 1.65em;
 }
 
-button.single-home-button {
+span.single-home-button {
   margin: 0 auto;
   padding: 0;
   width: 10em;
   height: 1.3em;
   text-transform: uppercase;
-  line-height: 1em;
+  text-align: center;
+  line-height: 1.4em;
+  font-family: "Roboto";
+  font-weight: bold;
   background-color: white;
   color: $textColor;
   border-radius: 0;
   align-self: flex-start;
+}
+
+.headlines {
+  text-align: center;
+  font-size: 1.5em;
+  color: $textColor;
+  padding: 4% 0 2% 0;
+}
+
+.galery-grid {
+  padding: 0 8% 5% 8%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5em;
+  justify-items: center;
+  @include media ($mobile-screen) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include media ($large-screen) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.thumb-image {
+  width: 20.1875em;
 
 }
