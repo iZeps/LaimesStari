@@ -46,10 +46,8 @@ main {
   border-radius: 1.25em;
   border: solid 0.18em $orangeColor;
   font-size: 1em;
-  line-height: 1em;
+  line-height: 0.9em;
   left: 50%;
-
-
 }
 
 .res-button:focus {
@@ -59,7 +57,11 @@ main {
 .res-button:hover {
   background: white;
   color: $orangeColor;
-  cursor: default;
+  
+}
+
+.second {
+  margin-bottom: 5em;
 }
 
 //First grid
@@ -331,4 +333,11 @@ span.single-home-button {
 #map_canvas #bodyContent p {
   font-size: 1em;
   margin: 0;
+}
+
+.google-map p {
+  padding: 8% 8% 3% 8%;
+  font-size: 0.8em;
+  color:#808c93;
+  text-align: center;
 }
