@@ -715,6 +715,108 @@ span.single-home-button {
 .thumb-image {
   width: 20.1875em; }
 
+.comment-container {
+  padding: 0 20% 5% 20%; }
+
+.comment {
+  display: table;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  width: 100%; }
+  .comment .comment-image,
+  .comment .comment-content {
+    display: table-cell;
+    vertical-align: top; }
+  .comment .comment-image {
+    padding-right: 1.4em; }
+    .comment .comment-image > img {
+      background: #d8d8d8;
+      border-radius: 3px;
+      display: block;
+      height: auto;
+      max-width: none;
+      padding: 0.7em;
+      width: 4em; }
+    .comment-reverse-order .comment .comment-image {
+      padding-left: 10px;
+      padding-right: 0; }
+  .comment .comment-content {
+    width: 100%; }
+    .comment .comment-content h1 {
+      text-transform: uppercase;
+      font-size: 1em;
+      margin: 0 0 0.5em 0;
+      color: #303f49; }
+    .comment .comment-content p {
+      font-size: 0.875em;
+      line-height: 1.5em;
+      margin-bottom: 0.5em;
+      color: #808c93; }
+
+.footer {
+  background: #efefef;
+  padding: 3em 1.618em;
+  width: 100%; }
+  .footer .footer-logo {
+    margin-bottom: 2em;
+    text-align: center; }
+    .footer .footer-logo img {
+      height: 3em; }
+  .footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5em; }
+  .footer ul {
+    flex-basis: 13em;
+    flex-shrink: 0;
+    margin-bottom: 3em;
+    padding: 0; }
+  .footer li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center; }
+  .footer li a {
+    color: rgba(48, 63, 73, 0.4);
+    text-decoration: none; }
+    .footer li a:focus, .footer li a:hover {
+      color: #303f49; }
+  .footer li h3 {
+    color: #303f49;
+    font-size: 1em;
+    margin-bottom: 0.4em; }
+  .footer hr {
+    border: 1px solid rgba(48, 63, 73, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; }
+  .footer p {
+    color: rgba(48, 63, 73, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center; }
+
+#map_canvas {
+  height: 400px;
+  width: 100%; }
+
+#map_canvas img {
+  max-width: none; }
+
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em; }
+
+#map_canvas .firstHeading {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0; }
+
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0; }
+
 .centered-navigation {
   background-color: #FFF;
   min-height: 60px;

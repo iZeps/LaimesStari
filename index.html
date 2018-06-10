@@ -82,31 +82,31 @@
 
       <a class="single-home-view nr1" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr2" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr3" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr4" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr5" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr6" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
       <a class="single-home-view nr7" href="" target="">
         <span class="house-logo"></span>
-        <span class="single-home-button">Irure dolor &rarr;</span>
+        <span class="single-home-button">Irure dolor <span style="color:#FF601A">&rarr;</span></span>
       </a>
 
     </div>
@@ -148,12 +148,72 @@
     </div>
     <!-- 2nd grid end-->
 
-    <!-- Review headline-->
+    <!-- Comment headline-->
     <h2 class="headlines">Atsauksmes</h2>
-    <!-- Review headline-->
+    <!-- Comment headline-->
+    <div class="comment-container">
+      <div class="comment">
+        <div class="comment-image">
+          <img src="icon.png">
+        </div>
+        <div class="comment-content">
+          <h1>First Comment Title or Author</h1>
+          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.&rdquo;</p>
+
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="comment-image">
+          <img src="icon.png">
+        </div>
+        <div class="comment-content">
+          <h1>Another One</h1>
+          <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.&rdquo;</p>
+
+        </div>
+      </div>
+    </div>
+    <!-- Map headline-->
+    <h2 class="headlines">Karte</h2>
+    <!-- Map headline-->
+    <div class="google-map">
+      <div id="map_canvas"></div>
+    </div>
 
   </main>
 
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+
+    <div class="footer-links">
+      <ul>
+        <li><h3>Sākums</h3></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+
+      </ul>
+      <ul>
+        <li><h3>Sadaļa</h3></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+
+      </ul>
+      <ul>
+        <li><h3>Kalendārs</h3></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+      </ul>
+      <ul>
+        <li><h3>Kontakti</h3></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+        <li><a href="javascript:void(0)">nav item</a></li>
+      </ul>
+    </div>
+    <p>Laimes Stari <span style="color:#FF601A">&#10084;</span> 2018</p>
+  </footer>
+    <!-- Footer end -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -167,6 +227,61 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    var bittersMap = (function () {
+      var myLatlng = new google.maps.LatLng(56.349133, 21.002515),
+          mapCenter = new google.maps.LatLng(56.349133, 21.002515),
+          mapCanvas = document.getElementById('map_canvas'),
+          mapOptions = {
+            center: mapCenter,
+            zoom: 13,
+            scrollwheel: false,
+            draggable: true,
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          },
+          map = new google.maps.Map(mapCanvas, mapOptions),
+          contentString =
+            '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Laimes Stari</h1>'+
+            '<div id="bodyContent"'+
+            '<p>Klampju ciems, Nīcas pag., Nīcas nov., LV-3473, Latvija</p>'+
+            '</div>'+
+            '</div>',
+          infowindow = new google.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 300
+          }),
+          marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Laimes Stari'
+          });
+
+      return {
+        init: function () {
+          map.set('styles', [{
+            featureType: 'landscape',
+            elementType: 'geometry',
+            stylers: [
+              { hue: '#ffff00' },
+              { saturation: 30 },
+              { lightness: 10}
+            ]}
+          ]);
+
+          google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map,marker);
+          });
+        }
+      };
+    }());
+
+    bittersMap.init();
+  </script>
 </body>
 
 </html>
