@@ -31,9 +31,12 @@ main {
       color: $textColor;
     }
     h1.house-page {
-      font-size: 4em;
+      font-size: 2.5em;
       text-align: left;
       padding-left: 8%;
+      @include media ($large-screen) {
+        font-size: 4em;
+      }
     }
     h2.house-page {
       font-size: 0.8em;

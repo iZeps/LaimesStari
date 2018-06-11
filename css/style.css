@@ -608,9 +608,12 @@ main {
       letter-spacing: 0.125em;
       color: #303f49; }
     .hero-laim .hero-container h1.house-page {
-      font-size: 4em;
+      font-size: 2.5em;
       text-align: left;
       padding-left: 8%; }
+      @media screen and (min-width: 53.75em) {
+        .hero-laim .hero-container h1.house-page {
+          font-size: 4em; } }
     .hero-laim .hero-container h2.house-page {
       font-size: 0.8em;
       text-align: left;
