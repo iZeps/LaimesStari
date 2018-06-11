@@ -586,6 +586,7 @@ main {
   padding: 0; }
 
 .hero-laim {
+  height: auto;
   background-image: url("../img/hero-laim.jpg");
   background-size: cover;
   background-position: center center; }
