@@ -592,21 +592,29 @@ main {
   .hero-laim .hero-container {
     padding: 5em 0;
     text-align: center; }
-  .hero-laim h1 {
-    font-size: 3.25em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 0.05em;
-    color: white; }
-    @media screen and (min-width: 53.75em) {
-      .hero-laim h1 {
-        font-size: 5.625em; } }
-  .hero-laim h2 {
-    font-size: .875em;
-    font-weight: bold;
-    letter-spacing: 0.125em;
-    color: #303f49; }
+    .hero-laim .hero-container h1 {
+      font-size: 3.25em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 0.05em;
+      color: white; }
+      @media screen and (min-width: 53.75em) {
+        .hero-laim .hero-container h1 {
+          font-size: 5.625em; } }
+    .hero-laim .hero-container h2 {
+      font-size: .875em;
+      font-weight: bold;
+      letter-spacing: 0.125em;
+      color: #303f49; }
+    .hero-laim .hero-container h1.house-page {
+      font-size: 4em;
+      text-align: left;
+      padding-left: 8%; }
+    .hero-laim .hero-container h2.house-page {
+      font-size: 0.8em;
+      text-align: left;
+      padding-left: 8%; }
 
 .res-button {
   position: relative;
@@ -787,10 +795,6 @@ span.single-home-button {
     color: #303f49;
     font-size: 1em;
     margin-bottom: 0.4em; }
-  .footer hr {
-    border: 1px solid rgba(48, 63, 73, 0.1);
-    margin: 0 auto 1.5em;
-    width: 12em; }
   .footer p {
     color: rgba(48, 63, 73, 0.4);
     font-size: 0.9em;
@@ -824,6 +828,25 @@ span.single-home-button {
   font-size: 0.8em;
   color: #808c93;
   text-align: center; }
+
+.paragraph-container {
+  padding: 5% 20% 10% 20%; }
+  .paragraph-container h2 {
+    font: 1.625em "Roboto";
+    font-weight: bold;
+    color: #303f49; }
+  .paragraph-container .gray-intro {
+    font-style: italic;
+    color: #808c93; }
+  .paragraph-container p {
+    padding-top: 5%; }
+  .paragraph-container figure {
+    padding: 5% 20%;
+    text-align: center; }
+    .paragraph-container figure figcaption {
+      font-style: italic;
+      color: #808c93;
+      font-size: 0.8em; }
 
 .centered-navigation {
   background-color: #FFF;

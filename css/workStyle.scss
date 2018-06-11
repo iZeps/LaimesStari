@@ -13,25 +13,35 @@ main {
   .hero-container {
     padding: 5em 0 ;
     text-align: center;
-
-  }
-  h1 {
-    font-size: 3.25em;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 0.05em;
-    color: white;
-    @include media ($large-screen) {
-      font-size: 5.625em;
+    h1 {
+      font-size: 3.25em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 0.05em;
+      color: white;
+      @include media ($large-screen) {
+        font-size: 5.625em;
+      }
+    }
+    h2 {
+      font-size: .875em;
+      font-weight: bold;
+      letter-spacing: 0.125em;
+      color: $textColor;
+    }
+    h1.house-page {
+      font-size: 4em;
+      text-align: left;
+      padding-left: 8%;
+    }
+    h2.house-page {
+      font-size: 0.8em;
+      text-align: left;
+      padding-left: 8%;
     }
   }
-  h2 {
-    font-size: .875em;
-    font-weight: bold;
-    letter-spacing: 0.125em;
-    color: $textColor;
-  }
+
 }
 
 //Reservation button and hover/focus control
@@ -293,11 +303,6 @@ span.single-home-button {
     margin-bottom: 0.4em;
   }
 
-  hr {
-    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
-    margin: 0 auto $base-spacing;
-    width: 12em;
-  }
 
   p {
     color: $footer-disclaimer-color;
@@ -340,4 +345,30 @@ span.single-home-button {
   font-size: 0.8em;
   color:#808c93;
   text-align: center;
+}
+
+.paragraph-container {
+
+  padding: 5% 20% 10% 20%;
+  h2 {
+    font: 1.625em "Roboto";
+    font-weight: bold;
+    color: $textColor;
+  }
+  .gray-intro {
+    font-style: italic;
+    color: #808c93;
+  }
+  p {
+    padding-top: 5%;
+  }
+  figure {
+    padding: 5% 20%;
+    text-align: center;
+    figcaption {
+      font-style: italic;
+      color: #808c93;
+      font-size: 0.8em;
+    }
+  }
 }
