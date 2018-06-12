@@ -674,7 +674,8 @@ a {
       grid-template-columns: 1fr 1fr 1fr; } }
 
 .single-home-view {
-  background: green;
+  background-image: url("../img/hero-laim.jpg");
+  background-position: center;
   height: 12.6em;
   grid-template-columns: 1fr;
   display: grid;
@@ -742,7 +743,8 @@ span.single-home-button {
       grid-template-columns: 1fr 1fr 1fr; } }
 
 .thumb-image {
-  width: 20.1875em; }
+  width: 20.1875em;
+  height: 12.625em; }
 
 .comment-container {
   padding: 0 20% 5% 20%; }

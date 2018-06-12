@@ -116,7 +116,9 @@ a {
 }
 
 .single-home-view {
-  background: green;
+  background-image: url("../img/hero-laim.jpg");
+  background-position: center;
+
   height: 12.6em;
   grid-template-columns: 1fr;
   display: grid;
@@ -192,7 +194,7 @@ span.single-home-button {
 
 .thumb-image {
   width: 20.1875em;
-
+  height: 12.625em;
 }
 
 .comment-container {
