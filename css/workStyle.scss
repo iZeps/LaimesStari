@@ -184,10 +184,10 @@ span.single-home-button {
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
   justify-items: center;
-  @include media ($mobile-screen) {
+  @include media ($mobile-screen_2) {
     grid-template-columns: 1fr 1fr;
   }
-  @include media ($large-screen) {
+  @include media ($large-screen_2) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

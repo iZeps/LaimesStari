@@ -735,10 +735,10 @@ span.single-home-button {
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
   justify-items: center; }
-  @media screen and (min-width: 26.5625em) {
+  @media screen and (min-width: 742px) {
     .galery-grid {
       grid-template-columns: 1fr 1fr; } }
-  @media screen and (min-width: 53.75em) {
+  @media screen and (min-width: 1171px) {
     .galery-grid {
       grid-template-columns: 1fr 1fr 1fr; } }
 
