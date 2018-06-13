@@ -582,7 +582,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 html {
-  margin: 0;
+  margin: 0 auto;
   padding: 0; }
 
 .hero-laim {
@@ -635,18 +635,19 @@ div.hero-laim-ver-2 {
       margin-top: 0.2em;
       font-size: 0.8em; }
 
+.button-container {
+  margin: 1.25em auto 4.375em auto;
+  text-align: center; }
+
 .res-button {
-  position: relative;
   color: #FF601A;
-  margin: 1.25em 0 0 -6.75em;
   background: white;
   width: 13.5em;
   height: 2.5em;
   border-radius: 1.25em;
   border: solid 0.18em #FF601A;
   font-size: 1em;
-  line-height: 0.9em;
-  left: 50%; }
+  line-height: 0.8em; }
 
 .res-button:focus {
   outline: 0; }
@@ -655,14 +656,13 @@ div.hero-laim-ver-2 {
   background: white;
   color: #FF601A; }
 
-.second {
-  margin-bottom: 5em; }
+main {
+  margin: 0 8%; }
 
 a {
   text-decoration: none; }
 
 .first-grid {
-  padding: 5% 8%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5em; }
@@ -710,13 +710,11 @@ span.house-logo {
 
 span.single-home-button {
   margin: 0 auto;
-  padding: 0;
   width: 10em;
   height: 1.3em;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.4em;
-  font-family: "Roboto";
   font-weight: bold;
   background-color: white;
   color: #303f49;
@@ -726,8 +724,7 @@ span.single-home-button {
 .headlines {
   text-align: center;
   font-size: 1.5em;
-  color: #303f49;
-  padding: 4% 0 2% 0; }
+  color: #303f49; }
 
 .galery-grid {
   margin: 0 0;

@@ -1,6 +1,5 @@
-//Main
 html {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -63,18 +62,20 @@ div.hero-laim-ver-2 {
 }
 
 //Reservation buttons and hover/focus control
+.button-container {
+  margin: 1.25em auto 4.375em auto;
+  text-align: center;
+}
+
 .res-button {
-  position: relative;
   color: $orangeColor;
-  margin: 1.25em 0 0 -6.75em;
   background: white;
   width: 13.5em;
   height: 2.5em;
   border-radius: 1.25em;
   border: solid 0.18em $orangeColor;
   font-size: 1em;
-  line-height: 0.9em;
-  left: 50%;
+  line-height: 0.8em;
 
 }
 
@@ -88,8 +89,9 @@ div.hero-laim-ver-2 {
 
 }
 
-.second {
-  margin-bottom: 5em;
+//Main content
+main {
+  margin: 0 8%;
 }
 
 //First grid
@@ -98,7 +100,6 @@ a {
 }
 
 .first-grid {
-  padding: 5% 8%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
@@ -114,7 +115,7 @@ a {
 .single-home-view {
   background-image: url("../img/hero-laim.jpg");
   background-position: center;
-
+// THIS IS WHERE I AM AT RIGHT NOW !!!!
   height: 12.6em;
   grid-template-columns: 1fr;
   display: grid;
@@ -154,13 +155,11 @@ span.house-logo {
 
 span.single-home-button {
   margin: 0 auto;
-  padding: 0;
   width: 10em;
   height: 1.3em;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.4em;
-  font-family: "Roboto";
   font-weight: bold;
   background-color: white;
   color: $textColor;
@@ -173,7 +172,6 @@ span.single-home-button {
   text-align: center;
   font-size: 1.5em;
   color: $textColor;
-  padding: 4% 0 2% 0;
 }
 
 //Second grid / Galery
