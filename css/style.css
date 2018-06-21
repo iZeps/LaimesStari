@@ -652,8 +652,8 @@ div.hero-laim-ver-2 {
   outline: 0; }
 
 .res-button:hover {
-  background: white;
-  color: #FF601A; }
+  background: #FF601A;
+  color: white; }
 
 main {
   margin: 0 8%; }
@@ -1054,7 +1054,7 @@ span.single-home-button {
     .centered-navigation .nav-link:first-child {
       margin-left: 1em; } }
   .centered-navigation ul li.nav-link {
-    background: #E7F1EC;
+    background: #ffeee6;
     display: block;
     line-height: 60px;
     overflow: hidden;
